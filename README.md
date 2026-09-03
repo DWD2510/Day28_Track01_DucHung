@@ -1,6 +1,6 @@
 # Day28 · Track01 — Từ *usage* đến *adoption*
 
-**Nhóm Đức·Hùng** — Lab: Dashboard Hành Động Cho Áp Dụng AI
+**Nhóm Đức·Hùng·Vinh** — Lab: Dashboard Hành Động Cho Áp Dụng AI
 
 | File | Nội dung |
 |---|---|
@@ -16,11 +16,12 @@
 |---|---|---|---|
 | Đỗ Quý Đức | 2A202601628 | Khoá phạm vi · Gartner-Lite · Mollick · workflow AS-IS/TO-BE · lộ trình 30-60-90 | **Nhóm 05** — trục *Chỉ số*: chỉ số "số câu hỏi/tuần" là activity, không chứng minh được giá trị; đề xuất đổi sang **tỷ lệ hồ sơ hoàn thành không phải QA làm lại**, lấy từ log QA có sẵn. |
 | Nguyễn Thanh Hùng | 2A202601808 | 5 câu hỏi chẩn đoán · ADKAR · dashboard 5 tầng · memo quyết định | **Nhóm 05** — trục *Framework*: ADKAR đang bị dùng như nhãn dán (liệt kê đủ 5 bước nhưng bước nào cũng "cần cải thiện"). Phải chỉ ra **một** bước nghẽn nặng nhất, vì nghẽn ở Desire và nghẽn ở Knowledge dẫn tới hai giải pháp khác nhau. |
+| Nguyễn Đặng Thành Vinh | 2A202602021 | Kiến trúc tin cậy (trích nguồn · QA mẫu · chuyển người · phản hồi) · thu thập bằng chứng: quan sát, log, phỏng vấn | **Nhóm 05** — trục *Hành động*: cột "khi chỉ số xấu" ghi "nhắc nhở người dùng" cho cả 3 dòng, tức chưa phải hành động. Mỗi dòng phải nói rõ **dừng cái gì / sửa cái gì / ai làm** — ví dụ trích nguồn < 80% thì dừng mở rộng người dùng chứ không nhắc nhở. |
 
-> Nhóm được phản biện: **Nhóm 05**. Hai góp ý ở trên đi đúng 2 trong 4 trục phản biện của §4.6.
+> Nhóm được phản biện: **Nhóm 05**. Ba góp ý ở trên đi đúng 3 trong 4 trục phản biện của §4.6 (Framework · Chỉ số · Hành động).
 > *(Nếu tại lớp nhóm bạn đổi số nhóm, sửa lại ô "Nhóm 05" cho khớp.)*
 
-Ghi chú về cách chia việc: cột "phần phụ trách" là người **chịu trách nhiệm viết ra**, không phải người duy nhất làm. Ba framework được chạy chung trong một buổi thảo luận trước khi chia nhau viết, nên cả ba cùng dẫn về hai nguyên nhân gốc ở mục 3 — xem sheet **Chẩn đoán** để đối chiếu.
+Ghi chú về cách chia việc: cột "phần phụ trách" là người **chịu trách nhiệm viết ra**, không phải người duy nhất làm. Ba framework được cả ba thành viên chạy chung trong một buổi thảo luận trước khi chia nhau viết, nên cả ba cùng dẫn về hai nguyên nhân gốc ở mục 3 — xem sheet **Chẩn đoán** để đối chiếu.
 
 ---
 
@@ -68,7 +69,7 @@ Cả ba framework gặp nhau ở một chỗ: **mở lớp đào tạo không gi
 Ba thay đổi bắt buộc:
 
 1. **Nguồn kiểm chứng** — 100% câu trả lời kèm link tài liệu gốc + ngày cập nhật; tài liệu không có ngày cập nhật thì không được vào chỉ mục.
-2. **Người chịu trách nhiệm** — Đỗ Quý Đức là data owner của kho tài liệu; nhân viên xử lý ticket giữ quyền phê duyệt cuối trước khi gửi khách hàng; Nguyễn Thanh Hùng chịu trách nhiệm QA mẫu 50 câu/tuần.
+2. **Người chịu trách nhiệm** — Đỗ Quý Đức là data owner của kho tài liệu; nhân viên xử lý ticket giữ quyền phê duyệt cuối trước khi gửi khách hàng; Nguyễn Đặng Thành Vinh chịu trách nhiệm kiến trúc tin cậy (trích nguồn, cơ chế chuyển người); Nguyễn Thanh Hùng chịu trách nhiệm QA mẫu 50 câu/tuần và tổng hợp chỉ số.
 3. **Khi AI không chắc chắn** — hệ thống gắn cờ độ tin cậy thấp hoặc không tìm thấy nguồn → chuyển người xử lý. Câu hỏi về giá và cam kết pháp lý nằm ngoài phạm vi AI.
 
 **Lộ trình 30-60-90** (chi tiết ở sheet *Roadmap 30-60-90*) — mỗi giai đoạn là một cổng, chỉ mở khi đạt dấu hiệu hoàn thành:
@@ -76,8 +77,8 @@ Ba thay đổi bắt buộc:
 | Giai đoạn | Mục tiêu | Owner | Điều kiện qua cổng |
 |---|---|---|---|
 | 0–30 ngày | Chứng minh vấn đề | Đỗ Quý Đức | 100% tài liệu có data owner · mỗi SOP còn 1 phiên bản · đủ baseline 7 chỉ số |
-| 31–60 ngày | Chứng minh chất lượng | Nguyễn Thanh Hùng | Trích nguồn ≥ 90% · làm lại ≤ 8% · chuyển người ≥ 95% · "dùng được ngay" ≥ 70% |
-| 61–90 ngày | Quyết định mở rộng | Đỗ Quý Đức | Phản hồi khách hàng ≤ 2,5 giờ · nhanh hơn nhóm đối chứng ≥ 25% · governance đạt |
+| 31–60 ngày | Chứng minh chất lượng | Nguyễn Đặng Thành Vinh | Trích nguồn ≥ 90% · làm lại ≤ 8% · chuyển người ≥ 95% · "dùng được ngay" ≥ 70% |
+| 61–90 ngày | Quyết định mở rộng | Nguyễn Thanh Hùng | Phản hồi khách hàng ≤ 2,5 giờ · nhanh hơn nhóm đối chứng ≥ 25% · governance đạt |
 
 ---
 
@@ -87,12 +88,12 @@ Dashboard v2 có **7 chỉ số** phủ đủ 5 tầng: 3 cấp Product · 3 c�
 
 | Cấp độ | Chỉ số | Baseline | Target | Nguồn dữ liệu | Owner |
 |---|---|---|---|---|---|
-| **Product** | Tỷ lệ câu trả lời có trích nguồn hợp lệ (nguồn + ngày cập nhật) | 0% | ≥ 90% | Kiểm tra mẫu 50 câu/tuần | Nguyễn Thanh Hùng |
+| **Product** | Tỷ lệ câu trả lời có trích nguồn hợp lệ (nguồn + ngày cập nhật) | 0% | ≥ 90% | Kiểm tra mẫu 50 câu/tuần | Nguyễn Đặng Thành Vinh |
 | **Product** | Tỷ lệ phiên kết thúc "dùng được ngay" | 32% (30 lượt quan sát) | ≥ 70% | Nút phản hồi cuối phiên | Nguyễn Thanh Hùng |
 | **Workflow** | Thời gian 1 lượt tra cứu QT1, **có nhóm đối chứng** | AI 12,4' vs đối chứng 11,8' | AI ≤ 8' và nhanh hơn ≥ 25% | Log tác vụ, tách theo nhóm | Đỗ Quý Đức |
 | **Workflow** | Tỷ lệ phản hồi QT2 phải làm lại sau QA | 18% (9/50) | ≤ 8% | Bảng theo dõi QA | Nguyễn Thanh Hùng |
 
-Ba chỉ số còn lại trong file: tỷ lệ bước tra cứu QT1 đi qua AI (22% → ≥ 60%), thời gian phản hồi khách hàng QT1 (4,2 giờ → ≤ 2,5 giờ — chỉ số nghiệp vụ), tỷ lệ ca "AI không chắc chắn" được chuyển người (chưa đo được → ≥ 95%). Mỗi dòng đều có **ngưỡng xấu** và **hành động khi chỉ số xấu**.
+Ba chỉ số còn lại trong file: tỷ lệ bước tra cứu QT1 đi qua AI (22% → ≥ 60%), thời gian phản hồi khách hàng QT1 (4,2 giờ → ≤ 2,5 giờ — chỉ số nghiệp vụ), tỷ lệ ca "AI không chắc chắn" được chuyển người (chưa đo được → ≥ 95%). Mỗi dòng đều có **ngưỡng xấu** và **hành động khi chỉ số xấu**. Owner chia theo phần phụ trách: Đỗ Quý Đức 3 chỉ số (quy trình và nghiệp vụ) · Nguyễn Thanh Hùng 2 (hành vi và QA) · Nguyễn Đặng Thành Vinh 2 (tin cậy và bàn giao).
 
 > **Về baseline**: số lấy từ tuần 1 của pilot nội bộ — quan sát 30 lượt hỏi của 8 nhân viên, log 100 ticket QT1, kiểm tra mẫu 50 phản hồi QT2. Cỡ mẫu nhỏ, dùng để chốt hướng và ngưỡng quyết định; phải đo lại ở cuối giai đoạn 0–30 ngày trước khi khoá target chính thức. Không có chỉ số nào dựa trên số tự khai.
 

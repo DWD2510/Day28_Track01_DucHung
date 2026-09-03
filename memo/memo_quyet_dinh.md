@@ -1,6 +1,6 @@
 # Memo quyết định — Trợ lý AI tra cứu tài liệu nội bộ
 
-**Nhóm**: Đức·Hùng — Đỗ Quý Đức (2A202601628), Nguyễn Thanh Hùng (2A202601808)
+**Nhóm**: Đức·Hùng·Vinh — Đỗ Quý Đức (2A202601628), Nguyễn Thanh Hùng (2A202601808), Nguyễn Đặng Thành Vinh (2A202602021)
 **Phạm vi**: 1 sản phẩm AI · nhân viên vận hành (25 người) · 3 quy trình QT1/QT2/QT3
 **Gửi**: trưởng nhóm vận hành · **Ngày**: 03/09/2026
 
@@ -42,7 +42,7 @@ Hai nguyên nhân này nuôi nhau: kho tài liệu không có chủ nên không 
 
 ## 3. Hai thay đổi sau phản biện chéo (v1 → v2)
 
-Nhóm 05 phản biện theo 4 trục §4.6 và chỉ ra hai điểm ở trục *Chỉ số* và trục *Framework*:
+Nhóm 05 phản biện theo 4 trục §4.6 và chỉ ra các điểm ở trục *Chỉ số*, *Framework* và *Hành động*:
 
 **Thay đổi 1 — bỏ chỉ số activity.**
 v1 có "số câu hỏi gửi AI/tuần" (140 → 300 câu) và "số tài khoản đăng nhập/tuần". Góp ý: đếm câu hỏi tăng không chứng minh công việc đã thay đổi — đúng lỗi "đo activity thay vì giá trị" ở §5.3.
@@ -73,8 +73,8 @@ Không dừng, cũng chưa mở rộng. Chạy pilot 90 ngày trên một nhóm 
 | Giai đoạn | Việc chính | Owner | Điều kiện qua cổng |
 |---|---|---|---|
 | **0–30 ngày**<br>Chứng minh vấn đề | Chỉ định data owner cho kho tài liệu, dọn phiên bản trùng, khoá phạm vi chỉ mục, ghi baseline 7 chỉ số, lập nhóm đối chứng | **Đỗ Quý Đức** | 100% tài liệu trong chỉ mục có data owner có tên · mỗi SOP còn 1 phiên bản hiệu lực · đủ baseline có ghi cỡ mẫu |
-| **31–60 ngày**<br>Chứng minh chất lượng | Bật trích nguồn + ngày cập nhật, bật gắn cờ độ tin cậy thấp và chuyển người, QA mẫu 50 câu/tuần, hướng dẫn 30 phút gắn vào QT1 + 2 tuần làm kèm | **Nguyễn Thanh Hùng** | Trích nguồn hợp lệ ≥ 90% · làm lại sau QA ≤ 8% · chuyển người ≥ 95% · "dùng được ngay" ≥ 70% |
-| **61–90 ngày**<br>Quyết định mở rộng | So 7 chỉ số với target, chốt owner vận hành, kiểm tra governance | **Đỗ Quý Đức** | Phản hồi khách hàng QT1 ≤ 2,5 giờ · nhóm AI nhanh hơn đối chứng ≥ 25% · không có ca sai lọt ra khách hàng |
+| **31–60 ngày**<br>Chứng minh chất lượng | Bật trích nguồn + ngày cập nhật, bật gắn cờ độ tin cậy thấp và chuyển người, QA mẫu 50 câu/tuần, hướng dẫn 30 phút gắn vào QT1 + 2 tuần làm kèm | **Nguyễn Đặng Thành Vinh** | Trích nguồn hợp lệ ≥ 90% · làm lại sau QA ≤ 8% · chuyển người ≥ 95% · "dùng được ngay" ≥ 70% |
+| **61–90 ngày**<br>Quyết định mở rộng | So 7 chỉ số với target, chốt owner vận hành, kiểm tra governance | **Nguyễn Thanh Hùng** | Phản hồi khách hàng QT1 ≤ 2,5 giờ · nhóm AI nhanh hơn đối chứng ≥ 25% · không có ca sai lọt ra khách hàng |
 
 **Điều kiện dừng.** Nếu ở mốc 90 ngày chất lượng đạt (trích nguồn ≥ 90%, làm lại ≤ 8%) nhưng thời gian phản hồi khách hàng vẫn > 3,5 giờ, thì nút thắt nằm ngoài bước tra cứu. Khi đó thu hẹp phạm vi còn QT1, hoặc **dừng mở rộng** và báo cáo lý do — không tiếp tục đầu tư vào công cụ để chữa một vấn đề nằm ở chỗ khác.
 
